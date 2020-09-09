@@ -7,7 +7,7 @@ Resources:
     Properties:
       Handler: lambda_function.lambda_handler
       Runtime: python3.8
-      CodeUri: [S3 location for lambda_function.py]
+      CodeUri: [S3 location for ZIP file containing lambda_function.py]
       Description: 'OpenSky Network to ArcGIS Online Aircraft Position Data Sync'
       MemorySize: 128
       Timeout: 10
