@@ -16,7 +16,7 @@ def lambda_handler(event, context):
     adds = []
 
     for aircraft in openSkyJson['states']:
-        match = re.search("^CAP[0-9]{3,4}$", aircraft[1])
+        match = re.search("^CAP[0-9]{3,4}", aircraft[1])
         if match:
           callsign = aircraft[1].strip()
           long = aircraft[5]
